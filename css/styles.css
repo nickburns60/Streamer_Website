@@ -1,0 +1,54 @@
+body {
+   font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+   text-align: center
+}
+nav ul {
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+    text-align: left;
+}
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "about sideBar"
+    "content sideBar";
+    gap: 5%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#about {
+    grid-area: about;
+    padding-left: 3%;
+   
+}
+
+#content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    iframe {
+        width: 100%;
+        }
+        padding-left: 3%;
+}
+
+#schedule {
+    grid-area: sideBar;
+    padding-right: 3%;
+}
+
+footer {
+padding-top: 6%;
+padding-bottom: 1%;
+text-align: center;
+}
+

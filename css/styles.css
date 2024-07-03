@@ -88,6 +88,34 @@ h2 {
         padding-bottom: 2%;
     }
 }
+/* #schedule {
+    grid-area: sideBar;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Headline"
+    "Table"
+    "Crow";
+   
+    text-align: center;
+    border: solid black 1vw;
+    th {
+        padding-bottom: 2%;
+    }
+}
+
+#schedule h2 {
+    grid-area: header;
+}
+#schedule table {
+    grid-area: table;
+}
+#schedule #crowPic {
+    grid-area: crow;
+    max-height: 300px;
+    max-width: 300px;
+} */
+
 
 footer {
 padding-top: 6%;

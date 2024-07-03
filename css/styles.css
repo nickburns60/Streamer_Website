@@ -1,16 +1,47 @@
 body {
    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-image: linear-gradient(purple, black);
+   color: aliceblue;
+
 }
 
 header {
-   text-align: center
+   text-align: center;
+   margin: 0%;
+   padding-top: 2%;
+   background-image: url("../images/crowBanner.jpg");
+   background-size: 200vh;
+   background-position: top;   
+}
+nav {
+    display: flex;
 }
 nav ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
-    li {
-        display: inline-block;
-    }
-    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(17, 17, 17, 0.603);
+    margin-top: 2%;
+    flex-basis:100%;
+}
+nav ul li {
+    flex-basis: 100%;
+    border: solid purple;
+    padding: 5px
+}
+
+a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+a:hover {
+    background-color:aliceblue;
+    color: black;
+    font-weight: bold;
 }
 main {
     display: grid;
@@ -19,6 +50,7 @@ main {
     "about sideBar"
     "content sideBar";
     gap: 5%;
+
 }
 
 h2 {

@@ -12,6 +12,7 @@ header {
    background-image: url("../images/crowBanner.jpg");
    background-size: 200vh;
    background-position: top;   
+   margin-bottom: 2%;
 }
 nav {
     display: flex;
@@ -76,22 +77,8 @@ h2 {
 #schedule {
     grid-area: sideBar;
     display: grid;
-    grid-template-rows: 1fr 10fr;
-    grid-template-areas: 
-    "Headline"
-    "Table";
-    align-items: start;
-    justify-items: space-evenly;
-    text-align: center;
-    border: solid black 1vw;
-    th {
-        padding-bottom: 2%;
-    }
-}
-/* #schedule {
-    grid-area: sideBar;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 4fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
     "Headline"
     "Table"
@@ -99,23 +86,40 @@ h2 {
    
     text-align: center;
     border: solid black 1vw;
+ 
+    
+}
+table {
+    border-collapse: collapse;
+    .streamInfo {
+        border-bottom: solid black 5px;
+    }
+    .streamInfo:nth-child(odd) {
+        background-color: purple;
+    }
     th {
-        padding-bottom: 2%;
+        border-bottom: solid black 5px;
+        background-color: purple;
     }
 }
 
+
 #schedule h2 {
-    grid-area: header;
+    grid-area: Headline;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
 }
 #schedule table {
-    grid-area: table;
+    grid-area: Table;
+    border-top: solid black 1vw;
 }
 #schedule #crowPic {
-    grid-area: crow;
-    max-height: 300px;
-    max-width: 300px;
-} */
-
+    grid-area: Crow;
+    max-height: 100%;
+    max-width: 100%;
+    border-top: solid black 1vw;
+}
 
 footer {
 padding-top: 6%;

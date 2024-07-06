@@ -25,7 +25,11 @@ header {
    background-size: 200vh;
    background-position: top;   
    margin-bottom: 2%;
-   
+
+   button {
+    background: none;
+    border: none;
+   }
 }
 
 #birb {
@@ -33,9 +37,11 @@ header {
     height: 15vh;
     margin: 0;
    }
+
 nav {
     display: flex;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -45,6 +51,7 @@ nav ul {
     margin-top: 2%;
     flex-basis:100%;
 }
+
 nav ul li {
     flex-basis: 100%;
     border: solid purple;
@@ -57,11 +64,13 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.3rem;
 }
+
 nav ul li a:hover {
     background-color:aliceblue;
     color: black;
     font-weight: bold;
 }
+
 main {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -69,7 +78,6 @@ main {
     "about sideBar"
     "content sideBar";
     gap: 5vw;
-
 }
 
 h2 {
@@ -111,6 +119,7 @@ h2 {
     text-align: center;
     border: solid black 1vw;
 }
+
 table {
     border-collapse: collapse;
     .streamInfo {
@@ -131,10 +140,12 @@ table {
     align-self: center;
     justify-self: center;
 }
+
 #schedule table {
     grid-area: Table;
     border-top: solid black 1vw;
 }
+
 #schedule #crowPic {
     grid-area: Crow;
     max-height: 100%;
@@ -157,6 +168,7 @@ a {
         margin: 10px;
         padding: 0;
     }
+
     header {
         display: flex;
         flex-direction: column;
@@ -168,6 +180,7 @@ a {
             justify-content: center;
         }
     }
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -177,6 +190,7 @@ a {
         flex-basis:100%;
         flex-grow: 1;
     }
+
     main {
         grid-template-columns: 1fr;
         grid-template-areas: 

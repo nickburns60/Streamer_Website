@@ -29,8 +29,11 @@ header {
    button {
     background: none;
     border: none;
-   }
+    outline: 0;
+   } 
+
 }
+
 
 #birb {
     padding-left: 5vw;

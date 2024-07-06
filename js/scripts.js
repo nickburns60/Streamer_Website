@@ -8,6 +8,8 @@ let schedule = [
     {id: 'Sunday', day: 'Sunday', streaming: 'Hunt: Showdown', time: '1:00pm'}
 ]
 
+let birbDialog = document.getElementById('birbDialog')
+
 function displaySchedule() {
     const table = document.querySelector('table')
     schedule.forEach((line) => {
@@ -28,4 +30,8 @@ function displaySchedule() {
 
 document.addEventListener('DOMContentLoaded', () => {
     displaySchedule()
+
+    document.getElementById('birbButton').addEventListener('click', () => {
+        birbDialog.showModal()
+        })
 })

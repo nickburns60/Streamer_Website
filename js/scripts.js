@@ -22,10 +22,7 @@ function displaySchedule() {
         tr.appendChild(stream)
         tr.appendChild(timeOf)
         table.appendChild(tr)
-
-
         tr.classList.add('streamInfo')
-   
     })
 }
 
